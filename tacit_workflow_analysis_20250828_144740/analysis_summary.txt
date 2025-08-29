@@ -1,0 +1,36 @@
+TACIT WORKFLOW DISCOVERY - ANALYSIS SUMMARY
+==================================================
+
+Analysis Date: 2025-08-28 14:47:56
+Output Directory: tacit_workflow_analysis_20250828_144740
+
+OVERALL STATISTICS:
+- Total workflow sequences discovered: 104
+- Unique starting activities analyzed: 11
+- Average sequence length: 11.6
+- Average sequence duration: 4.6 minutes
+
+GENERATED FILES:
+1. DFG Visualizations:
+   - dfg_visualizations/dfg_observing.png
+   - dfg_visualizations/dfg_wiring.png
+   - dfg_visualizations/dfg_open_door.png
+   - dfg_visualizations/dfg_toggle_lights.png
+   - dfg_visualizations/dfg_adjusting_tool.png
+   - dfg_visualizations/dfg_using_flexpendant_mounted.png
+   - dfg_visualizations/dfg_using_flexpendant_mobile.png
+   - dfg_visualizations/dfg_walking.png
+   - dfg_visualizations/dfg_preparing_buildplate.png
+   - dfg_visualizations/dfg_using_control_panel.png
+   - dfg_visualizations/dfg_refit_buildplate.png
+
+2. Analysis Plots:
+   - analysis_plots/tacit_knowledge_dashboard.png
+
+3. Control Charts:
+   - control_charts/process_control_charts.png
+
+4. Reports:
+   - reports/workflow_patterns_report.csv
+   - reports/complete_sequence_catalog.csv
+   - reports/user_knowledge_patterns.csv

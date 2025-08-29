@@ -1,0 +1,12 @@
+Starting Activity,Total Sequences,Avg Length,Avg Duration (min),Common Next Activities,Common Completions
+observing,8,7.6,1.2,"walking (7), wiring (1)","walking (6), using_flexpendant_mobile (1), observing (1)"
+wiring,4,13.0,9.1,"adjusting_tool (1), wiring (1), walking (1)","adjusting_tool (2), close_door (1), walking (1)"
+open_door,12,12.0,4.3,"toggle_lights (10), inspecting_buildplate (1), open_door (1)","toggle_lights (3), adjusting_tool (2), walking (2)"
+toggle_lights,15,11.0,3.7,"close_door (8), adjusting_tool (2), using_control_panel (2)","walking (5), using_control_panel (3), adjusting_tool (2)"
+adjusting_tool,13,11.0,6.2,"adjusting_tool (9), using_flexpendant_mobile (2), wiring (1)","adjusting_tool (8), using_flexpendant_mounted (1), wiring (1)"
+using_flexpendant_mounted,17,14.7,5.1,"using_flexpendant_mobile (6), using_control_panel (6), open_door (3)","using_flexpendant_mounted (8), using_control_panel (3), walking (3)"
+using_flexpendant_mobile,9,12.0,3.7,"adjusting_tool (4), using_control_panel (2), using_flexpendant_mobile (1)","using_control_panel (3), walking (2), using_flexpendant_mounted (2)"
+walking,3,3.0,1.9,"walking (2), wiring (1)",walking (3)
+preparing_buildplate,3,11.3,6.9,"using_flexpendant_mobile (1), using_control_panel (1), refit_buildplate (1)","using_flexpendant_mobile (2), walking (1)"
+using_control_panel,11,15.8,6.0,"using_flexpendant_mounted (4), open_door (4), toggle_lights (1)","using_flexpendant_mounted (3), walking (2), using_flexpendant_mobile (2)"
+refit_buildplate,4,6.8,4.4,refit_buildplate (4),"refit_buildplate (2), walking (1), donning_ppe (1)"
