@@ -1,0 +1,14 @@
+parameter,value
+sequence_length,150.0
+batch_size,16.0
+num_epochs,50.0
+learning_rate,0.0001
+model_dim,128.0
+num_heads,4.0
+num_encoder_layers,3.0
+dropout,0.1
+scheduler_step_size,15.0
+scheduler_gamma,0.1
+patience,10.0
+input_features,96.0
+num_classes,17.0

@@ -1,0 +1,84 @@
+{
+  "timestamp": "2025-09-09T14:43:41.000394",
+  "config": {
+    "data_dir": "./data",
+    "sequence_length": 8,
+    "image_size": [
+      224,
+      224
+    ],
+    "temporal_window": 2,
+    "batch_size": 8,
+    "num_epochs": 30,
+    "learning_rate": 0.001,
+    "cnn_feature_dim": 256,
+    "gnn_hidden_dim": 128,
+    "gnn_layers": 2,
+    "num_heads": 4,
+    "max_sequences": null,
+    "seed": 42,
+    "weighting_strategy": "inverse_sqrt",
+    "rare_class_boost": 3.0
+  },
+  "model_parameters": {
+    "backbone_name": "efficientnet_b0",
+    "backbone_description": "EfficientNet-B0 with Weighted Loss for Class Imbalance",
+    "total_parameters": 4444173,
+    "trainable_parameters": 4444173,
+    "num_classes": 17,
+    "class_names": [
+      "adjusting_tool",
+      "close_door",
+      "doffing_ppe",
+      "donning_ppe",
+      "grinding_buildplate",
+      "inspecting_buildplate",
+      "observing",
+      "open_door",
+      "preparing_buildplate",
+      "refit_buildplate",
+      "toggle_lights",
+      "turning_gas_knobs",
+      "using_control_panel",
+      "using_flexpendant_mobile",
+      "using_flexpendant_mounted",
+      "walking",
+      "wiring"
+    ]
+  },
+  "class_weights_info": {
+    "weighting_strategy": "inverse_sqrt",
+    "rare_class_boost": 3.0,
+    "class_weights": [
+      0.13461372256278992,
+      0.28229743242263794,
+      5.047487735748291,
+      2.0757246017456055,
+      1.7561532258987427,
+      1.0340676307678223,
+      1.0495022535324097,
+      1.2043383121490479,
+      0.3143223226070404,
+      0.10193486511707306,
+      1.2567596435546875,
+      1.7749360799789429,
+      0.21928484737873077,
+      0.1164655089378357,
+      0.12475961446762085,
+      0.22960665822029114,
+      0.2777453064918518
+    ],
+    "weight_range": {
+      "min": 0.10193486511707306,
+      "max": 5.047487735748291,
+      "mean": 1.0,
+      "std": 1.240839958190918
+    },
+    "max_penalty_ratio": 49.51679229736328
+  },
+  "pytorch_version": "2.7.1+cu128",
+  "cuda_available": true,
+  "device": "cuda",
+  "cuda_device": "NVIDIA GeForce GTX 1080 Ti",
+  "cuda_memory": 11810897920
+}

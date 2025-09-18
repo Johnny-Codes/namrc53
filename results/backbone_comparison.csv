@@ -1,0 +1,4 @@
+Backbone,Description,Best F1 Score,Final Validation Accuracy,Final Test Accuracy,Training Time (s),Total Parameters,Results Directory
+efficientnet_b0,Original EfficientNet-B0 - Baseline efficient CNN,0.9548673797146097,0.9754601226993865,0.9758435582822086,21942.868834733963,4444173,efficientnet_b0_stratified_seq8_bs8_lr0.001_20250905_083308
+efficientnet_v2_s,EfficientNetV2-S - Faster training & better scaling,0.9363944137249894,0.9712423312883436,0.9743098159509203,36889.33259010315,20614113,efficientnet_v2_s_stratified_seq8_bs8_lr0.001_20250905_143922
+convnext_tiny,ConvNeXt-Tiny - Modernized CNN with transformer-like performance,0.8190126727492443,0.13765337423312884,0.13726993865030676,94141.01841020584,28124145,convnext_tiny_stratified_seq8_bs8_lr0.001_20250906_005442

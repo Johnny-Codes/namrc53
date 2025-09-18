@@ -1,0 +1,52 @@
+{
+  "timestamp": "2025-09-07T03:04:21.071894",
+  "config": {
+    "data_dir": "./data",
+    "sequence_length": 8,
+    "image_size": [
+      224,
+      224
+    ],
+    "temporal_window": 2,
+    "batch_size": 8,
+    "num_epochs": 30,
+    "learning_rate": 0.001,
+    "cnn_feature_dim": 256,
+    "gnn_hidden_dim": 128,
+    "gnn_layers": 2,
+    "num_heads": 4,
+    "max_sequences": null,
+    "seed": 42
+  },
+  "model_parameters": {
+    "backbone_name": "swin_tiny",
+    "backbone_description": "Swin Transformer-Tiny - Hierarchical vision transformer",
+    "total_parameters": 27824907,
+    "trainable_parameters": 27824907,
+    "num_classes": 17,
+    "class_names": [
+      "adjusting_tool",
+      "close_door",
+      "doffing_ppe",
+      "donning_ppe",
+      "grinding_buildplate",
+      "inspecting_buildplate",
+      "observing",
+      "open_door",
+      "preparing_buildplate",
+      "refit_buildplate",
+      "toggle_lights",
+      "turning_gas_knobs",
+      "using_control_panel",
+      "using_flexpendant_mobile",
+      "using_flexpendant_mounted",
+      "walking",
+      "wiring"
+    ]
+  },
+  "pytorch_version": "2.7.1+cu128",
+  "cuda_available": true,
+  "device": "cuda",
+  "cuda_device": "NVIDIA GeForce GTX 1080 Ti",
+  "cuda_memory": 11810897920
+}

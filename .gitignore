@@ -1,0 +1,8 @@
+data
+.venv
+__pycache__
+output
+*.pth
+*.env
+user_breakdown/*
+user_breakdown

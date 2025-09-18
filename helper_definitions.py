@@ -1,0 +1,77 @@
+JOINT_NAMES = [
+    "PELVIS",
+    "SPINE_NAVAL",
+    "SPINE_CHEST",
+    "NECK",
+    "CLAVICLE_LEFT",
+    "SHOULDER_LEFT",
+    "ELBOW_LEFT",
+    "WRIST_LEFT",
+    "HAND_LEFT",
+    "HANDTIP_LEFT",
+    "THUMB_LEFT",
+    "CLAVICLE_RIGHT",
+    "SHOULDER_RIGHT",
+    "ELBOW_RIGHT",
+    "WRIST_RIGHT",
+    "HAND_RIGHT",
+    "HANDTIP_RIGHT",
+    "THUMB_RIGHT",
+    "HIP_LEFT",
+    "KNEE_LEFT",
+    "ANKLE_LEFT",
+    "FOOT_LEFT",
+    "HIP_RIGHT",
+    "KNEE_RIGHT",
+    "ANKLE_RIGHT",
+    "FOOT_RIGHT",
+    "HEAD",
+    "NOSE",
+    "EYE_LEFT",
+    "EAR_LEFT",
+    "EYE_RIGHT",
+    "EAR_RIGHT",
+]
+
+
+BONE_CONNECTIONS = [
+    ("SPINE_CHEST", "NECK"),
+    ("NECK", "HEAD"),
+    ("SPINE_CHEST", "CLAVICLE_LEFT"),
+    ("CLAVICLE_LEFT", "SHOULDER_LEFT"),
+    ("SHOULDER_LEFT", "ELBOW_LEFT"),
+    ("ELBOW_LEFT", "WRIST_LEFT"),
+    ("WRIST_LEFT", "HAND_LEFT"),
+    ("HAND_LEFT", "HANDTIP_LEFT"),
+    ("WRIST_LEFT", "THUMB_LEFT"),
+    ("SPINE_CHEST", "CLAVICLE_RIGHT"),
+    ("CLAVICLE_RIGHT", "SHOULDER_RIGHT"),
+    ("SHOULDER_RIGHT", "ELBOW_RIGHT"),
+    ("ELBOW_RIGHT", "WRIST_RIGHT"),
+    ("WRIST_RIGHT", "HAND_RIGHT"),
+    ("HAND_RIGHT", "HANDTIP_RIGHT"),
+    ("WRIST_RIGHT", "THUMB_RIGHT"),
+    ("SPINE_CHEST", "SPINE_NAVAL"),
+    ("SPINE_NAVAL", "PELVIS"),
+    ("PELVIS", "HIP_LEFT"),
+    ("HIP_LEFT", "KNEE_LEFT"),
+    ("KNEE_LEFT", "ANKLE_LEFT"),
+    ("ANKLE_LEFT", "FOOT_LEFT"),
+    ("PELVIS", "HIP_RIGHT"),
+    ("HIP_RIGHT", "KNEE_RIGHT"),
+    ("KNEE_RIGHT", "ANKLE_RIGHT"),
+    ("ANKLE_RIGHT", "FOOT_RIGHT"),
+    ("HEAD", "NOSE"),
+    ("NOSE", "EYE_LEFT"),
+    ("EYE_LEFT", "EAR_LEFT"),
+    ("NOSE", "EYE_RIGHT"),
+    ("EYE_RIGHT", "EAR_RIGHT"),
+]
+
+
+INTRINSICS = {
+    "fx": 255.134,  # Focal length in x
+    "fy": 255.134,  # Focal length in y
+    "cx": 158.753,  # Principal point x
+    "cy": 143.388,  # Principal point y
+}

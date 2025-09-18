@@ -1,0 +1,8 @@
+Starting Activity,Total Sequences,Avg Length,Avg Duration (min),Common Next Activities,Common Completions
+observing,6,16.2,16.2,"walking (5), wiring (1)","walking (4), close_door (1), using_flexpendant_mobile (1)"
+open_door,4,17.0,21.7,"toggle_lights (3), open_door (1)","adjusting_tool (1), using_control_panel (1), using_flexpendant_mounted (1)"
+adjusting_tool,9,30.7,24.3,"adjusting_tool (7), using_flexpendant_mobile (1), toggle_lights (1)","adjusting_tool (3), using_flexpendant_mounted (2), using_control_panel (1)"
+toggle_lights,10,21.4,11.7,"close_door (4), using_control_panel (2), adjusting_tool (1)","walking (4), using_control_panel (2), wiring (1)"
+using_flexpendant_mounted,7,22.0,14.5,"using_flexpendant_mobile (5), using_control_panel (2)","adjusting_tool (2), using_flexpendant_mounted (2), close_door (1)"
+wiring,3,10.7,8.1,"wiring (1), walking (1), using_flexpendant_mobile (1)","adjusting_tool (2), walking (1)"
+using_control_panel,5,30.6,19.1,"using_flexpendant_mounted (2), using_control_panel (1), toggle_lights (1)","walking (1), open_door (1), toggle_lights (1)"

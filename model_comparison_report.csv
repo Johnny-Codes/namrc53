@@ -1,0 +1,7 @@
+Model,View,Accuracy,F1-Score,Precision,Recall
+LSTM,Inner,31.82,30.45,31.17,31.82
+GCN,Inner,56.82,55.81,59.07,56.82
+Transformer,Inner,27.27,11.69,7.44,27.27
+LSTM,Outer,33.33,29.52,34.56,33.33
+GCN,Outer,61.11,59.94,60.47,61.11
+Transformer,Outer,30.56,14.3,9.34,30.56

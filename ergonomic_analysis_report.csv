@@ -1,0 +1,18 @@
+Action Label,Avg Score,Std Dev,Min Score,Max Score,Risk Level,Sequences Analyzed
+adjusting_tool,8.40,1.39,4.00,10.59,High,126
+close_door,6.49,0.49,5.01,7.68,Medium,71
+doffing_ppe,5.48,1.50,4.00,7.44,Medium,5
+donning_ppe,6.98,1.32,4.40,8.28,Medium,8
+grinding_buildplate,7.23,1.68,5.00,9.82,Medium,12
+inspecting_buildplate,6.34,2.00,3.14,9.75,Medium,23
+observing,5.15,1.03,3.23,7.93,Medium,36
+open_door,7.01,0.68,5.25,8.40,Medium,62
+preparing_buildplate,7.37,1.92,4.00,9.98,Medium,38
+refit_buildplate,10.33,0.79,8.00,11.53,High,39
+toggle_lights,6.51,0.82,4.12,8.18,Medium,110
+turning_gas_knobs,5.99,1.41,4.25,7.72,Medium,11
+using_control_panel,4.77,0.68,3.21,6.49,Medium,216
+using_flexpendant_mobile,6.04,1.24,3.27,8.91,Medium,107
+using_flexpendant_mounted,4.75,0.66,3.00,7.05,Medium,231
+walking,4.50,0.44,3.69,5.68,Medium,103
+wiring,7.50,1.60,4.00,9.00,Medium,29
