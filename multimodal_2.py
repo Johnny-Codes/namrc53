@@ -35,7 +35,7 @@ class VideoFeatureExtractor(nn.Module):
         super(VideoFeatureExtractor, self).__init__()
         self.feature_dim = feature_dim
 
-        # Simple CNN backbone (placeholder for more sophisticated models)
+        # Simple CNN backbone
         self.backbone = nn.Sequential(
             # First conv block
             nn.Conv2d(in_channels, 64, kernel_size=7, stride=2, padding=3),
@@ -145,7 +145,7 @@ class VideoTransformerEncoder(nn.Module):
 class HyperSAEncoder(nn.Module):
     """
     Conceptual placeholder for Hypergraph Self-Attention model.
-    Implemented as a standard Transformer Encoder for skeleton feature processing.
+    See https://github.com/ZhouYuxuanYX/Hyperformer/tree/main
     """
 
     def __init__(
@@ -274,7 +274,7 @@ class ActionRecognitionModel(nn.Module):
         num_classes,
         video_feature_dim=512,
         skeleton_model_dim=512,
-        skeleton_input_dim=96,  # Updated to match actual skeleton data (32 joints * 3 coordinates)
+        skeleton_input_dim=96,
         video_transformer_layers=4,
         skeleton_transformer_layers=4,
         n_heads=8,
@@ -648,9 +648,7 @@ class MultimodalTrainer:
             model.parameters(), lr=learning_rate, weight_decay=weight_decay
         )
 
-        # EMERGENCY RESTART with proper learning rate management:
-
-        # OPTION 1: Cosine Annealing with Warm Restarts (RECOMMENDED)
+        # Cosine Annealing with Warm Restarts
         self.scheduler = torch.optim.lr_scheduler.CosineAnnealingWarmRestarts(
             self.optimizer,
             T_0=len(train_loader) * 3,  # 3-epoch cycles
@@ -659,7 +657,7 @@ class MultimodalTrainer:
             last_epoch=-1,
         )
 
-        # OPTION 2: ReduceLROnPlateau (adaptive)
+        # ReduceLROnPlateau (adaptive)
         # self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         #     self.optimizer,
         #     mode='min',
@@ -669,7 +667,7 @@ class MultimodalTrainer:
         #     verbose=True
         # )
 
-        # OPTION 3: Simple step decay
+        # Simple step decay
         # self.scheduler = torch.optim.lr_scheduler.StepLR(
         #     self.optimizer,
         #     step_size=len(train_loader) * 5,  # Every 5 epochs
@@ -976,7 +974,7 @@ def run_multimodal_training():
         "image_size": (224, 224),
         "batch_size": 4,  # Reduce batch size for stability
         "num_epochs": 30,
-        "learning_rate": 5e-6,  # ULTRA conservative - down from 2e-5
+        "learning_rate": 5e-6,  # down from 2e-5
         "weight_decay": 1e-5,  # Reduce weight decay
         "video_feature_dim": 512,
         "skeleton_model_dim": 512,
@@ -1033,7 +1031,7 @@ def run_multimodal_training():
         splitter = StratifiedVideoDatasetSplitter(
             train_ratio=0.8,
             val_ratio=0.1,
-            test_ratio=0.1,  # Changed ratios to sum to 1.0
+            test_ratio=0.1,
         )
 
         # Use the create_stratified_split method with the dataset
@@ -1060,7 +1058,7 @@ def run_multimodal_training():
             batch_size=config["batch_size"],
             shuffle=True,
             collate_fn=collate_multimodal_fn,
-            num_workers=0,  # Reduce to 0 for debugging
+            num_workers=0,
             pin_memory=True,
         )
 
@@ -1069,7 +1067,7 @@ def run_multimodal_training():
             batch_size=config["batch_size"],
             shuffle=False,
             collate_fn=collate_multimodal_fn,
-            num_workers=0,  # Reduce to 0 for debugging
+            num_workers=0,
             pin_memory=True,
         )
 
@@ -1078,7 +1076,7 @@ def run_multimodal_training():
             batch_size=config["batch_size"],
             shuffle=False,
             collate_fn=collate_multimodal_fn,
-            num_workers=0,  # Reduce to 0 for debugging
+            num_workers=0,
             pin_memory=True,
         )
 
